@@ -350,12 +350,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.75;
+  opacity: 0.3;
   background: url("images/banner.jpg") center #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  z-index: -1;
 }
 #header-title {
   text-align: center;
@@ -369,8 +368,10 @@ body {
 #subtitle {
   text-decoration: none;
   color: #06c;
+  text-outline: 2px 2px #000;
   font-weight: 700;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-outline: #000;
 }
 #logo {
   font-size: 40px;
