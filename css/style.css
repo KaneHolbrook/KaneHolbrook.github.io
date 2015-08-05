@@ -360,7 +360,7 @@ body {
   text-align: left;
   height: 50px;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 0;
   margin-top: -25px;
 }
@@ -387,7 +387,7 @@ body {
   margin-top: 22px;
 }
 #main-nav {
-  float: left;
+  float: right;
   margin-left: -15px;
 }
 .nav-icon,
@@ -414,7 +414,6 @@ body {
   width: 14px;
   height: 14px;
   padding: 20px 15px;
-  position: relative;
   cursor: pointer;
 }
 .main-nav-link {
@@ -439,14 +438,10 @@ body {
 }
 #sub-nav {
   float: right;
-  margin-right: -15px;
+  margin-right: -1px;
 }
-#nav-rss-link:before {
-  content: "\f09e";
-}
-#nav-search-btn:before {
-  content: "\f002";
-}
+#nav-rss-link,
+#nav-search-btn,
 #search-form-wrap {
   position: absolute;
   top: 15px;
@@ -459,11 +454,15 @@ body {
   -ms-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
+#nav-rss-link.on,
+#nav-search-btn.on,
 #search-form-wrap.on {
   opacity: 1;
   right: 0;
 }
 @media screen and (max-width: 479px) {
+  #nav-rss-link,
+  #nav-search-btn,
   #search-form-wrap {
     width: 100%;
     right: -100%;
